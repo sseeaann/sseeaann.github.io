@@ -1,0 +1,170 @@
+.home-wrap
+  header
+    width: 135px
+    background: linear-gradient(right, #000, #222)
+
+    .header-position
+      padding: 30px 0
+      position: fixed
+      top: 0
+      left: 0
+      bottom: 0
+      width: 135px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+    .logo
+      +hide-text
+      max-width: 135px
+      background:
+        image: url(/assets/img/sh_icon.svg)
+        repeat: no-repeat
+        position: center
+        size: contain
+      height: 100px
+      padding: 0
+      margin: 0
+      overflow: hidden
+      cursor: pointer
+
+    .site-nav
+      ul
+        list-style: none
+        margin: 20px 0
+        padding: 0 20px 0 0
+        text-align: right
+
+        li
+          margin-bottom: 25px
+
+          &:last-child
+            margin-bottom: 0
+
+    .social-media
+      ul
+        text-align: right
+        padding: 0 20px 0 0
+        margin: 0
+        li
+          display: inline-block
+          padding-right: 5px
+
+          &:last-child
+            padding-right: 0
+
+    .mobile-nav-toggle
+      display: none
+      width: 30px
+      height: 30px
+      margin-right: 20px
+      align-items: center
+      cursor: pointer
+      border: 1px solid #333
+      border-radius: 5px
+      padding: 7px
+      box-shadow: 0 3px 1px -1px #222
+      background-color: #111
+      position: relative
+
+      span,
+      span:before,
+      span:after
+        content: ""
+        display: block
+        height: 2px
+        width: 100%
+        background: white
+        position: relative
+
+        transition: all 0.3s ease-in-out
+
+      span:before
+        top: 10px
+
+      span:after
+        top: -12px
+
+      &.is-open
+        box-shadow: inset 0 -3px 1px rgba(0,0,0,0.25)
+        background-color: rgba(40,40,40,0.4)
+
+      &.is-open span
+        background: transparent
+
+      &.is-open span:before,
+      &.is-open span:after
+        transform-origin: center
+        transform: rotate(405deg)
+        top: 0
+
+      &.is-open span:after
+        transform: rotate(-405deg)
+
+  // Mobile Nav
+  .mobile-nav
+    position: absolute
+    width: 100%
+    background: #000
+    padding: 30px 0 20px
+    transform: translateY(-100%)
+    transition: all 0.3s ease-in-out
+
+    ul
+      list-style: none
+      margin-top: 60px
+      padding: 0
+
+    li
+      text-align: center
+      padding-bottom: 10px
+
+      &:last-child
+        padding-bottom: 0
+
+    ul.social
+      margin: 0
+      text-align: center
+      li
+        display: inline-block
+        padding-right: 10px
+
+        &:last-child
+          padding-right: 0
+
+@media (max-width: 775px)
+  .home-wrap
+    header
+      width: auto
+      padding: 0
+      background: #000
+      position: fixed
+      z-index: 1
+
+      .header-position
+        width: 100vw
+        position: relative
+        top: auto
+        bottom: auto
+        left: auto
+        padding: 10px 0
+        flex-direction: row
+        align-items: center
+
+      .site-nav,
+      .social-media
+        display: none
+
+      .logo
+        height: 50px
+        z-index: 2
+
+      .mobile-nav-toggle
+        display: flex
+        z-index: 2
+
+    .mobile-nav.is-open
+      background: linear-gradient(rgba(0,0,0,1) 60%, rgba(0,0,0,0.85))
+      transform: translateY(0%)
+      position: fixed
+      z-index: 1

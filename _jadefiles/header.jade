@@ -1,0 +1,33 @@
+mixin nav-content()
+  ul
+    li: a(href="#home") HOME
+    li: a(href="#about") ABOUT
+    li: a(href="#portfolio") PORTFOLIO
+    li: a(href="#contact") CONTACT
+
+mixin nav-content-social()
+  ul.social
+    li: a(href="https://www.linkedin.com/in/sseeaann", target="_blank")
+      i.fa.fa-linkedin-square.fa-lg
+    li: a(href="https://github.com/sseeaann", target="_blank")
+      i.fa.fa-github-square.fa-lg
+    li: a(href="https://instagram.com/sseeaann13/", target="_blank")
+      i.fa.fa-instagram.fa-lg
+    li: a(href="mailto:seanhaines13@gmail.com")
+      i.fa.fa-envelope.fa-lg
+
+.mobile-nav
+  +nav-content()
+  +nav-content-social()
+
+header
+  .header-position
+    h1.logo Sean Haines
+
+    nav.site-nav
+      +nav-content()
+
+    .social-media
+      +nav-content-social()
+
+    .mobile-nav-toggle: span

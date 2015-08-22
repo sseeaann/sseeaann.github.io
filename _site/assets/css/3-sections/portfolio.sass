@@ -1,0 +1,168 @@
+section.portfolio
+  min-height: 100vh
+  background:
+    color: rgba(0,0,0,1)
+  text-align: center
+  padding: 30px 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+  h2
+    margin: 0
+    padding: 0
+
+  .container
+    max-width: 900px
+    margin: 10px auto
+
+    .row
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: center
+
+      .port
+        background:
+          color: $accent-color-dark
+        min-width: 250px
+        max-width: 250px
+        height: 250px
+        border-radius: 50%
+        border: 10px double #333
+        margin: 5px 10px
+        transition: all 0.6s ease-in-out
+        filter: grayscale(100%)
+        position: relative
+        overflow: hidden
+
+        &.is-showing
+          opacity: 1
+          transform: translateX(0px)
+
+        &:hover
+          flex-grow: 2
+          border-radius: 5px
+          transition: all 0.6s ease-in-out
+          border:
+            color: #ddd
+          filter: none
+
+          .hyperlinks
+            left: 0%
+
+        .hyperlinks
+          margin: 0
+          padding: 0
+          width: 100%
+          background:
+            color: rgba(0, 0, 0, 0.4)
+          position: absolute
+          clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)
+          left: -100%
+          transition: all 0.4s ease-in-out
+          display: flex
+          flex-direction: row
+          flex-wrap: wrap
+          align-items: baseline
+          justify-content: center
+
+          a
+            color: rgba(255,255,255, 0.8)
+            margin: 100px 20px
+
+            &:hover
+              color: $accent-color
+              transition: all 0.2s ease-in-out
+              text-shadow: 2px 2px 2px black
+
+          span
+            content: ""
+            height: 40px
+            width: 5px
+            background: rgba(255,255,255, 0.9)
+            position: relative
+
+      #dyna
+        background:
+          image: url(/assets/img/Dynasport.jpg)
+          repeat: no-repeat
+          position: center
+          // size: 100% 100%
+
+      #brew
+        background:
+          image: url(/assets/img/BREWbeacon.jpg)
+          repeat: no-repeat
+          position: center
+          size: 100% 100%
+
+      #muse-shoes
+        background:
+          image: url(/assets/img/muse-shoes.jpg)
+          repeat: no-repeat
+          position: center
+          size: 100% 100%
+
+      #mercys
+        background:
+          image: url(/assets/img/mercys_table.jpg)
+          repeat: no-repeat
+          position: center
+          size: 100% 100%
+
+      #pike
+        background:
+          image: url(/assets/img/pike_st_theater.jpg)
+          repeat: no-repeat
+          position: center
+          size: 100% 100%
+
+      #postIt
+        background:
+          image: url(/assets/img/Post_It.jpg)
+          repeat: no-repeat
+          position: center
+          size: 100% 100%
+
+      #cars
+        background:
+          image: url(/assets/img/cars.jpg)
+          repeat: no-repeat
+          position: center
+          size: 100% 100%
+
+      #chat
+        background:
+          image: url(/assets/img/chatRoom.jpg)
+          repeat: no-repeat
+          position: center
+          size: 100% 100%
+
+      #ninjaGold
+        background:
+          image: url(/assets/img/NinjaGold.jpg)
+          repeat: no-repeat
+          position: center
+          size: 100% 100%
+
+      #jobBoard
+        background:
+          image: url(/assets/img/job_board.jpg)
+          repeat: no-repeat
+          position: center
+          size: 100% 100%
+
+      #pTable
+        background:
+          image: url(/assets/img/PeriodicTable.jpg)
+          repeat: no-repeat
+          position: center
+          size: 100% 100%
+
+      #github
+        background:
+          image: url(/assets/img/github.svg)
+          repeat: no-repeat
+          position: center
+          size: 100% 100%
