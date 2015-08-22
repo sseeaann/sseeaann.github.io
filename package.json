@@ -12,6 +12,7 @@
     "browser-sync": "^2.8.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
+    "gulp-favicons": "^1.0.9",
     "gulp-jade": "^1.0.1",
     "gulp-sass": "^2.0.4"
   },
