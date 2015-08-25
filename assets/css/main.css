@@ -864,8 +864,8 @@ section.about {
           animation-name: pulse;
   -webkit-animation-duration: 2.5s;
           animation-duration: 2.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2; }
 
 @media (max-width: 1000px) {
   section.about .container .box {
@@ -884,7 +884,7 @@ section.about {
   section.about .container {
     width: 100%; }
     section.about .container .box .box-contents ul li a {
-      opacity: 0.3; } }
+      opacity: 0.25; } }
 
 @media (min-width: 776px) and (max-width: 1000px) {
   section.about .container .box .box-contents ul li span.sub-lead {

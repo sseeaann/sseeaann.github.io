@@ -16,8 +16,11 @@ $( document ).ready(function() {
         $(this).removeClass('zoomOutUp').hide();
       });
     });
+  }).on('mouseover', function(){
+    $(this).addClass('pulse').one(animationEnd,function(){
+      $(this).removeClass('pulse');
+    });
   });
-  $('#heart').addClass('pulse');
 
 // Toggle Mobil Navbar:
   $('.mobile-nav-toggle').on('click', function(){
