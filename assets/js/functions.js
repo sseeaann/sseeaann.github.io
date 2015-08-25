@@ -50,9 +50,9 @@ $( document ).ready(function() {
     function() {
       var currentTop = $(window).scrollTop();
       if (currentTop < this.previousTop) {
-        $('header').slideDown();
+        $('header').fadeIn(500);
       } else {
-        $('header').slideUp();
+        $('header').fadeOut(200);
       }
       this.previousTop = currentTop;
     });

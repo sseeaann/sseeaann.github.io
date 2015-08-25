@@ -852,7 +852,9 @@ section.about {
 
 @media (max-width: 775px) {
   section.about .container {
-    width: 100%; } }
+    width: 100%; }
+    section.about .container .box .box-contents ul li a {
+      opacity: 0.3; } }
 
 @media (min-width: 776px) and (max-width: 1000px) {
   section.about .container .box .box-contents ul li span.sub-lead {
