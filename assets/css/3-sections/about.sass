@@ -176,6 +176,22 @@ section.about
   animation-name: zoomOutUp
   animation-delay: 1s
 
+@keyframes pulse
+  from
+    transform: scale3d(1, 1, 1)
+
+  50%
+    transform: scale3d(1.3, 1.3, 1.3)
+
+  100%
+    transform: scale3d(1, 1, 1)
+
+.pulse
+  animation-name: pulse
+  animation-duration: 2.5s
+  animation-iteration-count: infinite
+
+
 @media (max-width: 1000px)
   section.about .container
     .box

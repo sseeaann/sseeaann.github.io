@@ -17,6 +17,7 @@ $( document ).ready(function() {
       });
     });
   });
+  $('#heart').addClass('pulse');
 
 // Toggle Mobil Navbar:
   $('.mobile-nav-toggle').on('click', function(){
