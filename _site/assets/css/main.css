@@ -862,8 +862,8 @@ section.about {
 .pulse {
   -webkit-animation-name: pulse;
           animation-name: pulse;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-iteration-count: 2;
           animation-iteration-count: 2; }
 
@@ -951,7 +951,8 @@ section.portfolio {
           -webkit-transform: translateX(0px);
               -ms-transform: translateX(0px);
                   transform: translateX(0px); }
-        section.portfolio .container .row .port:hover {
+        section.portfolio .container .row .port:hover,
+        section.portfolio .container .row .port:focus {
           -webkit-box-flex: 2;
           -webkit-flex-grow: 2;
               -ms-flex-positive: 2;
@@ -962,7 +963,8 @@ section.portfolio {
           border-color: #ddd;
           -webkit-filter: none;
                   filter: none; }
-          section.portfolio .container .row .port:hover .hyperlinks {
+          section.portfolio .container .row .port:hover .hyperlinks,
+          section.portfolio .container .row .port:focus .hyperlinks {
             left: 0%; }
         section.portfolio .container .row .port .hyperlinks {
           margin: 0;
@@ -998,7 +1000,8 @@ section.portfolio {
           section.portfolio .container .row .port .hyperlinks a {
             color: rgba(255, 255, 255, 0.8);
             margin: 100px 20px; }
-            section.portfolio .container .row .port .hyperlinks a:hover {
+            section.portfolio .container .row .port .hyperlinks a:hover,
+            section.portfolio .container .row .port .hyperlinks a:focus {
               color: #BD5248;
               -webkit-transition: all 0.2s ease-in-out;
                       transition: all 0.2s ease-in-out;
