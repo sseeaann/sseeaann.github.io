@@ -726,6 +726,7 @@ section.about {
       section.about .container .box .box-contents {
         text-align: left;
         min-height: 275px;
+        max-width: 60%;
         -webkit-box-flex: 2;
         -webkit-flex-grow: 2;
             -ms-flex-positive: 2;
@@ -875,6 +876,7 @@ section.about {
       height: 200px; }
     section.about .container .box .box-contents {
       height: 100%;
+      max-width: 100%;
       font-size: 1em; }
       section.about .container .box .box-contents ul {
         margin: 0;
