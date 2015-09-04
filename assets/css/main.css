@@ -1020,6 +1020,11 @@ section.portfolio {
         background-image: url(/assets/img/Dynasport.jpg);
         background-repeat: no-repeat;
         background-position: center; }
+      section.portfolio .container .row #cupcakes {
+        background-image: url(/assets/img/Cupcakes.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
       section.portfolio .container .row #splash {
         background-image: url(/assets/img/splash_modal.jpg);
         background-repeat: no-repeat;
