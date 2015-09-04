@@ -1065,16 +1065,6 @@ section.portfolio {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%; }
-      section.portfolio .container .row #ninjaGold {
-        background-image: url(/assets/img/NinjaGold.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% 100%; }
-      section.portfolio .container .row #jobBoard {
-        background-image: url(/assets/img/job_board.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% 100%; }
       section.portfolio .container .row #pTable {
         background-image: url(/assets/img/PeriodicTable.jpg);
         background-repeat: no-repeat;
