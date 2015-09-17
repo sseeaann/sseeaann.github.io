@@ -10,9 +10,9 @@
       left: 0
       bottom: 0
       width: 135px
-      display: flex
-      flex-direction: column
-      justify-content: space-between
+      @include display(flex)
+      @include flex-direction(column)
+      @include justify-content(space-between)
 
     .logo
       +hide-text
@@ -58,7 +58,7 @@
       width: 30px
       height: 30px
       margin-right: 20px
-      align-items: center
+      @include align-items(center)
       cursor: pointer
       border: 1px solid #333
       border-radius: 5px
@@ -94,12 +94,12 @@
 
       &.is-open span:before,
       &.is-open span:after
-        transform-origin: center
-        transform: rotate(405deg)
+        @include transform-origin(center)
+        @include transform(rotate(405deg))
         top: 0
 
       &.is-open span:after
-        transform: rotate(-405deg)
+        @include transform(rotate(-405deg))
 
   // Mobile Nav
   .mobile-nav
@@ -107,7 +107,7 @@
     width: 100%
     background: #000
     padding: 30px 0 20px
-    transform: translateY(-100%)
+    @include transform(translateY(-100%))
     transition: all 0.3s ease-in-out
 
     ul
@@ -148,8 +148,8 @@
         bottom: auto
         left: auto
         padding: 10px 0
-        flex-direction: row
-        align-items: center
+        @include flex-direction(row)
+        @include align-items(center)
 
       .site-nav,
       .social-media
@@ -160,11 +160,11 @@
         z-index: 2
 
       .mobile-nav-toggle
-        display: flex
+        @include display(flex)
         z-index: 2
 
     .mobile-nav.is-open
       background: linear-gradient(rgba(0,0,0,1) 60%, rgba(0,0,0,0.85))
-      transform: translateY(0%)
+      @include transform(translateY(0%))
       position: fixed
       z-index: 1

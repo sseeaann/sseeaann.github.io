@@ -14,9 +14,9 @@ section.contact
   .col-1
     padding-top: 30vh
     padding-bottom: 40px
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
+    @include display(flex)
+    @include flex-wrap(wrap)
+    @include justify-content(center)
 
     .social-img
       width: 100px
@@ -45,6 +45,7 @@ section.contact
 
       &:hover
         color: $accent-color-dark
+        
 @media (min-width: 615px) and (max-width: 949px)
   section.contact
     .col-1
