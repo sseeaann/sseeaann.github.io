@@ -1110,6 +1110,10 @@ section.portfolio {
             width: 5px;
             background: rgba(255, 255, 255, 0.9);
             position: relative; }
+      section.portfolio .container .row #designFirst {
+        background-image: url(/assets/img/DesignFirstApps.jpg);
+        background-repeat: no-repeat;
+        background-position: center; }
       section.portfolio .container .row #dyna {
         background-image: url(/assets/img/Dynasport.jpg);
         background-repeat: no-repeat;
@@ -1141,11 +1145,6 @@ section.portfolio {
         background-size: 100% 100%; }
       section.portfolio .container .row #pike {
         background-image: url(/assets/img/pike_st_theater.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% 100%; }
-      section.portfolio .container .row #postIt {
-        background-image: url(/assets/img/Post_It.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%; }
