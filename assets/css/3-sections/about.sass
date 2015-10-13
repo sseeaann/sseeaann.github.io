@@ -148,7 +148,7 @@ section.about
 
 
 
-@keyframes zoomInDown
+@include keyframes(zoomInDown)
   from
     opacity: 0
     @include transform(scale3d(.1, .1, .1) translate3d(0, -1000px, 0))
@@ -162,7 +162,7 @@ section.about
 .zoomInDown
   @include animation-name(zoomInDown)
 
-@keyframes zoomOutUp
+@include keyframes(zoomOutUp)
   40%
     opacity: 1
     @include transform(scale3d(.475, .475, .475) translate3d(0, 60px, 0))
@@ -178,7 +178,7 @@ section.about
   @include animation-name(zoomOutUp)
   @include animation-delay(1s)
 
-@keyframes pulse
+@include keyframes(pulse)
   from
     @include transform(scale3d(1, 1, 1))
 

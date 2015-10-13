@@ -32,6 +32,48 @@ $( document ).ready(function() {
     }
   });
 
+// Contact Us Overlay
+  $('.writeMe').on('click', function(){
+    $('.overlay').addClass('is-open');
+    $('body').css('overflow','hidden');
+  });
+
+  $('.close-btn').on('click', function(){
+    $('.overlay').removeClass('is-open');
+    $('body').css('overflow','initial');
+    $('#contactForm')[0].reset();
+  });
+
+// Form submit
+  $('#contactForm').validate({
+    onfocusout: false,
+    onkeyup: false,
+    rules: {
+      email: {
+        required: true,
+        email: true
+      },
+      message: "required"
+    },
+    messages: {
+      _replyto: "* Um... I kind of need a valid email",
+      message: "* What, cat got your tongue?"
+    },
+    errorLabelContainer: '#errorMessages',
+    submitHandler: function(){
+      swal({
+        title: "Thanks!",
+        text: "I heard ya loud and clear.",
+        imageUrl: "assets/img/jumpMe.png",
+        imageSize: "200x200",
+        confirmButtonColor: "#80170f"
+      });
+      $('.overlay').removeClass('is-open');
+      $('body').css('overflow','initial');
+      $('#contactForm')[0].reset();
+    }
+  });
+
 // Smooth Scroll:
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
