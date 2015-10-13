@@ -1091,6 +1091,11 @@ section.portfolio {
             width: 5px;
             background: rgba(255, 255, 255, 0.9);
             position: relative; }
+      section.portfolio .container .row #eyelight {
+        background-image: url(/assets/img/eyelight.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
       section.portfolio .container .row #designFirst {
         background-image: url(/assets/img/DesignFirstApps.jpg);
         background-repeat: no-repeat;
@@ -1109,11 +1114,6 @@ section.portfolio {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
-      section.portfolio .container .row #brew {
-        background-image: url(/assets/img/brew.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% 100%; }
       section.portfolio .container .row #muse-shoes {
         background-image: url(/assets/img/muse-shoes.jpg);
         background-repeat: no-repeat;
