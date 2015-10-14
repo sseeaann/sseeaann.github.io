@@ -59,20 +59,33 @@ $( document ).ready(function() {
       _replyto: "* Um... I kind of need a valid email",
       message: "* What, cat got your tongue?"
     },
-    errorLabelContainer: '#errorMessages',
-    submitHandler: function(){
-      swal({
-        title: "Thanks!",
-        text: "I heard ya loud and clear.",
-        imageUrl: "assets/img/jumpMe.png",
-        imageSize: "200x200",
-        confirmButtonColor: "#80170f"
-      });
-      $('.overlay').removeClass('is-open');
-      $('body').css('overflow','initial');
-      $('#contactForm')[0].reset();
-    }
+    errorLabelContainer: '#errorMessages'
   });
+
+  if (window.location.hash === "#thanks") {
+    function redirect(){
+			window.location="/";
+		}
+
+    swal({
+      title: "Thanks!",
+      text: "I heard ya loud and clear.",
+      imageUrl: "assets/img/jumpMe.png",
+      imageSize: "200x200",
+      allowEscapeKey: false,
+      confirmButtonColor: "#80170f",
+    },
+      function(isConfirm){
+        if(isConfirm){
+          confirmButton: redirect();
+        }
+      }
+    );
+
+    $('.overlay').removeClass('is-open');
+    $('body').css('overflow','initial');
+    $('#contactForm')[0].reset();
+  }
 
 // Smooth Scroll:
   $('a[href*=#]:not([href=#])').click(function() {
