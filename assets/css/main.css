@@ -1091,6 +1091,11 @@ section.portfolio {
             width: 5px;
             background: rgba(255, 255, 255, 0.9);
             position: relative; }
+      section.portfolio .container .row #blinky {
+        background-image: url(/assets/img/blinky.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
       section.portfolio .container .row #eyelight {
         background-image: url(/assets/img/eyelight.jpg);
         background-repeat: no-repeat;
@@ -1124,11 +1129,6 @@ section.portfolio {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%; }
-      section.portfolio .container .row #pike {
-        background-image: url(/assets/img/pike_st_theater.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% 100%; }
       section.portfolio .container .row #cars {
         background-image: url(/assets/img/cars.jpg);
         background-repeat: no-repeat;
@@ -1147,8 +1147,7 @@ section.portfolio {
       section.portfolio .container .row #github {
         background-image: url(/assets/img/github.svg);
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% 100%; }
+        background-position: center; }
 
 section.contact {
   min-height: 100vh;
