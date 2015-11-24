@@ -1,0 +1,87 @@
+@include keyframes(fade-trans)
+	from
+		background: #333333
+	
+	to
+		background: #FFFFFF
+
+.fade-trans
+	@include animation(fade-trans)
+	@include animation-duration(2s)
+	@include animation-fill-mode(both)
+
+.fade-trans-reverse
+	@include animation(fade-trans)
+	@include animation-duration(2s)
+	@include animation-fill-mode(both)
+	@include animation-direction(reverse)
+
+
+@include keyframes(hello)
+	from
+		font-size: 0px
+		@include transform(rotate(0deg))
+
+	60%
+		font-size: 36px
+
+	to
+		font-size: 30px
+		@include transform(rotate(-180deg))
+
+.hello
+	@include animation(hello)
+	@include animation-duration(.75s)
+
+
+@include keyframes(bye-bye)
+	from
+		font-size: 36px
+
+	to
+		font-size: 0px
+
+.bye-bye
+	@include animation(bye-bye)
+	@include animation-duration(.5s)
+
+
+@include keyframes(bye-bye-up)
+	from
+		@include transform(translateY(0%))
+
+	to
+		@include transform(translateY(-100%) rotate(-45deg))
+
+.bye-bye-up
+	@include animation(bye-bye-up)
+	@include animation-duration(.2s)
+
+@include keyframes(credits-scroll)
+	0%
+		@include transform(translateY(100vh))
+
+	100%
+		@include transform(translateY(-2400px))
+
+.credits-scroll
+	@include animation(credits-scroll)
+	@include animation-duration(60s)
+	@include animation-iteration-count(infinite)
+	@include animation-timing-function(linear)
+
+
+@include keyframes(intro-scroll)
+	0%
+		// @include transform(translateY(100vh))
+
+	100%
+		@include transform(translateY(-100vh))
+
+.intro-scroll
+	@include animation(intro-scroll)
+	@include animation-duration(15s)
+	// @include animation-iteration-count(infinite)
+	@include animation-timing-function(linear)
+
+

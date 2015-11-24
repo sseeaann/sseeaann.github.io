@@ -1,0 +1,47 @@
+#homeContent
+	@include display(flex)
+	@include align-items(center)
+	@include justify-content(center)
+	height: 100vh
+	width: 100vw
+	position: absolute
+	overflow: hidden
+
+	.mainLinks
+		position: absolute
+		transition: all 300ms ease-in-out
+		opacity: 1
+		pointer-events: auto
+
+		&.fade
+			opacity: .2
+			@include filter(blur(20px))
+		
+
+		&#folio
+			height: 50%
+			top: -10%
+			left: -7%
+			width: 115%
+
+		&#about
+			width: 115%
+			height: 50%
+			left: -7%
+			bottom: -15%
+
+
+	.garnish
+		width: 50px
+		display: inline-block
+		padding: 10px 10px 0
+		display: none
+
+	h1
+		cursor: pointer
+		font-size: 26px
+		font-family: $mono
+
+		&:hover
+			text-shadow: 2px 2px 2px #AAA
+		
