@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-13" sketch:type="MSArtboardGroup" transform="translate(-216.000000, -65.000000)" stroke="#333333">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(217.000000, 67.000000)">
+                <path d="M1.45719472,0.284045585 C0.848929922,0.284045589 0.639688181,36.8743105 1.45719471,36.8743097 C2.20927533,36.874309 37.9999992,37.6731791 38,36.8743097 C38.0000008,36.0754403 38.5088166,0.284045572 38,0.284045585 C37.4911834,0.284045597 2.86827622,0.284045583 1.45719472,0.284045585 Z" id="Path-210" stroke-width="3" sketch:type="MSShapeGroup"></path>
+                <path d="M9.11082174,14.8773952 L9.11082174,31.8593568" id="Path-211" stroke-width="5" sketch:type="MSShapeGroup"></path>
+                <path d="M19,15 L19,31.9819616" id="Path-211-Copy" stroke-width="5" sketch:type="MSShapeGroup"></path>
+                <path d="M19.9236457,19.4069426 C19.9236457,19.4069426 23.0062157,16.4138368 26.3022334,16.4181788 C29.598251,16.4225208 30.2245471,19.0116513 30.2245472,19.4320245 C30.2245473,19.8523977 30.2245471,32.0310901 30.2245471,32.0310901" id="Path-213" stroke-width="4" sketch:type="MSShapeGroup"></path>
+                <path d="M9.37995091,8.17010851 L9.37995091,9.2871327" id="Path-214" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

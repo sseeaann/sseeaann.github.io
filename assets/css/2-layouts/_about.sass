@@ -1,0 +1,192 @@
+#mobile-contact-nav
+	display: none
+
+#hack-fade-out
+	position: absolute
+	top: 0
+	width: 100vw
+	height: 60px
+	@include background(linear-gradient(rgba(white,1), rgba(white,0)))
+	z-index: 1
+
+#hack-fade-in
+	position: absolute
+	bottom: 0
+	width: 100vw
+	height: 60px
+	@include background(linear-gradient(rgba(white,0), rgba(white,1)))
+	z-index: 1
+
+#contact-nav
+	background: transparent
+	position: absolute
+	font-family: $mono
+	z-index: 2
+	color: $g3
+
+	ul
+		list-style: none
+		margin: 0
+		padding: 10px
+
+		li
+			margin: 5px 
+
+			.contact-icon
+				width: 30px
+				background: white
+				display: inline-block
+				vertical-align: bottom
+				cursor: e-resize
+				display: none
+
+			.typedContent
+				display: none
+
+			p
+				display: inline-block
+				background: white
+				margin: 0 0 10px
+				font-size: 16px
+
+				a
+					color: $g3
+					text-decoration: none
+
+			#typed1
+				cursor: pointer
+
+
+.bigFont
+	margin: 0
+	text-shadow: 2px 2px 0 rgba($cyan, 1)
+	display: none
+	font-size: 5vw
+	font-family: $nexa
+
+
+#aboutContent
+	height: 100vh
+	width: 100vw
+	position: relative
+	font-family: $mono
+
+	#aboutIntro
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		font-family: $nexa
+
+	#aboutWords
+		width: 50%
+		min-width: 600px
+		height: 100%
+		text-align: center
+
+		p.title
+			font-family: $nexa
+
+		.aboutSection
+			margin: 75px 0
+			padding: 20px
+
+			p.employer
+				font-size: 24px
+
+			p.aboutItems
+				position: relative
+				text-align: right
+				white-space: nowrap
+
+
+				span
+					display: inline-block
+					vertical-align: bottom
+					background: white
+
+					strong
+						font-size: 22px
+
+
+				.filler
+					position: absolute
+					left: 0
+					right: 0
+					border-bottom: 2px dotted $g3
+					height: 74%
+					z-index: -1
+
+				.left
+					background: white
+					float: left
+					padding-right: 5px
+					text-align: left
+
+				.right
+					padding-left: 5px
+
+			ul.list
+				list-style: none
+				margin: 0
+				padding: 0
+				display: inline-block
+				vertical-align: top
+				
+
+				li
+					text-align: left
+
+					&.lead
+						text-decoration: underline
+
+				&#facts
+					li
+						text-align: center
+
+@media (max-width: 860px)
+	#contact-nav 
+		display: none
+
+	#mobile-contact-nav
+		display: block
+		text-align: center
+
+		p
+			font-family: $mono
+			font-size: 14px
+			margin: 5px 0
+
+		a
+			margin: 10px 0
+			display: inline-block
+
+			img
+				height: 20px
+
+@media (max-width: 600px)
+	#aboutContent
+		overflow: hidden
+
+		#aboutWords
+			width: 100%
+			min-width: auto
+
+			.aboutSection
+				p.aboutItems
+					white-space: auto
+
+@media (max-width: 450px)
+	.bigFont
+		font-size: 7vw
+		
+	#aboutContent 
+		#aboutWords
+			.aboutSection
+				font-size: 4vw
+
+
+
+
+

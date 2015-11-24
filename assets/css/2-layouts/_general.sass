@@ -1,0 +1,137 @@
+body
+	position: relative
+	overflow: hidden
+
+	&.flow
+		overflow-y: scroll
+
+	.musicIcon
+		position: fixed
+		bottom: 0
+		right: 0
+		color: white
+		font-size: 25px
+		background: #333
+		padding: 6px 10px
+		cursor: pointer
+		z-index: 999
+		display: none
+
+		&:hover
+			color: #333
+			background: white
+
+	#menu
+		width: 50px
+		height: 50px
+		z-index: 999
+		position: fixed
+		top: 0
+		right: 0
+		cursor: pointer
+		@include display(flex)
+		@include align-items(center)
+		@include justify-content(center)
+
+		.menuIcon
+			color: $cyan
+			font-size: 30px
+			transition: all 300ms ease-in-out
+
+			&:hover
+				color: rgba($cyan, 0.75)
+				text-shadow: $g3Shadow
+				font-size: 36px
+
+		#menu-close
+			display: none
+
+
+	nav
+		font-family: $nexa
+		padding: 10px 
+		@include display(flex)
+		@include align-items(center)
+		@include justify-content(center)
+		@include flex-direction(column)
+		@include transform(translateY(-100%))
+		position: fixed
+		background: white
+		width: 100%
+		transition: all 200ms linear
+		z-index: 10
+		
+		&.is-open
+			@include transform(translateY(0%))
+			box-shadow: 0 10px 2px rgba(0,0,0,0.25)
+
+
+			#cat-face
+				width: 70px
+				height: 70px
+				border-radius: 50%
+				background: 
+					image: url('../img/cat-face.jpg')
+					size: cover
+				border: 3px solid $g3
+				margin-bottom: 15px
+
+			.nav-link
+				transition: all 200ms ease-in-out
+				
+				&:last-child
+					margin-top: 15px
+
+				&:hover
+					text-shadow: $cyanShadow
+					letter-spacing: 5px
+
+		a,
+		a:visited
+			color: $g3
+			text-decoration: none
+
+	.transition
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: rgba(white,0)
+		font-size: 0
+		display: none
+		z-index: 100
+
+		&.dark
+			background: rgba($g3, 1)
+
+		.row
+			height: 10vh
+			width: 100%
+			font-size: 0
+
+			&.row-2
+				@include animation-delay(0.12s)
+			&.row-3
+				@include animation-delay(0.24s)
+			&.row-4
+				@include animation-delay(0.36s)
+			&.row-5
+				@include animation-delay(0.48s)
+			&.row-6
+				@include animation-delay(1s)
+			&.row-7
+				@include animation-delay(1.12s)
+			&.row-8
+				@include animation-delay(1.24s)
+			&.row-9
+				@include animation-delay(1.36s)
+			&.row-10
+				@include animation-delay(1.48s)
+
+
+.flex-center
+	@include display(flex)
+	@include align-items(center)
+	@include justify-content(center)
+	@include flex-direction(column)
