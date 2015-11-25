@@ -489,7 +489,6 @@ $(function(){
 	function typed(){
 		$('#greeting').typed({
 			strings: ['...^1700','greetings.^1000','my name is sean','my name is ^750 sseeaann.^1000','this is my portfolio.^1000 <br>enjoy...^1000'],
-			// strings: ['...'],
 			typeSpeed: 75,
 			backSpeed: 40,
 			backDelay: 500,
@@ -556,47 +555,14 @@ $(function(){
 		}, 500);
 		$play.show();
 	} else if(isMobile === true && top.location.pathname === '/') {
-		swal({
-			title: 'Would you like a tasty jam?',
-			showCancelButton: true,
-			confirmButtonColor: '#50E3C2',
-			confirmButtonText: 'Lay it on me!',
-			cancelButtonText: 'No thanks',
-			closeOnConfirm: true,
-			closeOnCancel: false
-		},
-			function(isConfirm){
-				if(isConfirm){
-					checkForCookies();
-					grooveIntro();
-					setTimeout(function(){
-						typed();
-					}, 1000);
-					$play.show();
-				} else {
-					swal({
-						title: 'Too bad...',
-						text: 'Click the lower right icon if you change your mind.',
-						confirmButtonColor: '#50E3C2'
-					},
-						function(){
-							grooveIntro();
-							mute();
-							noAudioCookie();
-							setTimeout(function(){
-								typed();
-							}, 500);
-							$mute.show();
-						}
-					);
-				}
-			}
-		);
+		setTimeout(function(){
+			typed();
+		}, 500);
 	}
 
 
 // HOME PAGE:
-	if(top.location.pathname === '/home.html'){
+	if(isMobile === false && top.location.pathname === '/home.html'){
 
 		load_leaves();
 		groove();
@@ -611,6 +577,8 @@ $(function(){
 		$('#myName').hover(function(){
 			$('#folio, #about').toggleClass('fade');
 		});
+	} else if(isMobile === true && top.location.pathname === '/home.html'){
+		load_leaves();
 	}
 
 	$('#folio, #about').click(function(){
@@ -636,8 +604,10 @@ $(function(){
 		var $folioItem = $('.folioItem'),
 			$folioInfo = $('.folioInfo');
 
-		mmmYeah();
-		showAudioIcon();
+		if(isMobile === false){
+			mmmYeah();
+			showAudioIcon();
+		}
 
 		$('body').addClass('flow');
 
@@ -688,10 +658,6 @@ $(function(){
 				});
 			}, 250);
 		}
-		
-		load_social();
-		swellMe();
-		showAudioIcon();
 
 		if(isMobile === false){
 			function aboutIntro(){
@@ -707,18 +673,21 @@ $(function(){
 					$('#aboutIntro p').fadeIn(2000);
 					setTimeout(function(){
 						$('#aboutIntro p').fadeOut(2000);
-					}, 3000);
+					}, 2750);
 					setTimeout(function(){
 						$('#aboutIntro h1').fadeIn(2000);
-					}, 5000);
-				}, 52500);
+					}, 4750);
+				}, 55000);
 			}
 
 			aboutIntro();
+			load_social();
+			swellMe();
+			showAudioIcon();
 
 			setInterval(function(){
 				aboutIntro();
-			}, 60000);
+			}, 59750);
 		} else {
 			$('#aboutWords .bigFont').css('display','block');
 		}
