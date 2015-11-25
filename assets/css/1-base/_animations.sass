@@ -72,8 +72,6 @@
 
 
 @include keyframes(intro-scroll)
-	0%
-		// @include transform(translateY(100vh))
 
 	100%
 		@include transform(translateY(-100vh))
@@ -81,7 +79,6 @@
 .intro-scroll
 	@include animation(intro-scroll)
 	@include animation-duration(15s)
-	// @include animation-iteration-count(infinite)
 	@include animation-timing-function(linear)
 
 
