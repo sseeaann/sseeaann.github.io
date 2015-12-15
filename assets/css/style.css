@@ -1070,22 +1070,22 @@ body {
   @media (max-width: 510px) {
     #folioContent .folioWrapper #designfirstapps {
       background-position: center -25px; } }
+  #folioContent .folioWrapper #rider {
+    background-image: url("../img/rider.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat; }
+    #folioContent .folioWrapper #rider:hover {
+      -webkit-filter: grayscale(0.2);
+      filter: grayscale(0.2); }
+    #folioContent .folioWrapper #rider.adjust-left {
+      background-position: center top; }
   #folioContent .folioWrapper #eyelight {
     background-image: url("../img/eyelight.jpg");
     background-size: cover;
     background-position: center 40%;
     background-repeat: no-repeat; }
     #folioContent .folioWrapper #eyelight.adjust-left {
-      background-position: center top; }
-  #folioContent .folioWrapper #blinky {
-    background-image: url("../img/blinky.jpg");
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat; }
-    #folioContent .folioWrapper #blinky:hover {
-      -webkit-filter: grayscale(0.2);
-      filter: grayscale(0.2); }
-    #folioContent .folioWrapper #blinky.adjust-left {
       background-position: center top; }
   #folioContent .folioWrapper #dynasport {
     background-image: url("../img/dynasport.jpg");

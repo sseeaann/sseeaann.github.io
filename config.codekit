@@ -1465,17 +1465,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/code.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 84076,
-		"inputAbbreviatedPath": "\/assets\/img\/code.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/code.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/designfirstapps.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1549,6 +1538,17 @@
 		"initialSize": 44144,
 		"inputAbbreviatedPath": "\/assets\/img\/rgb.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/rgb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/rider.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 472753,
+		"inputAbbreviatedPath": "\/assets\/img\/rider.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/rider.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1671,7 +1671,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Sean Haines",
+"lastSavedByUser": "seanhaines",
 "manualImportLinks": {
 	},
 "projectAttributes": {

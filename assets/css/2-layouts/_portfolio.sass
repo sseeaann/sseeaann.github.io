@@ -42,25 +42,26 @@
 					position: center -25px
 
 
-		#eyelight
+		#rider
 			background:
-				image: url('../img/eyelight.jpg')
-				size: cover
-				position: center 40%
-				repeat: no-repeat
-
-			&.adjust-left
-				background-position: center top
-
-		#blinky
-			background:
-				image: url('../img/blinky.jpg')
+				image: url('../img/rider.jpg')
 				size: cover
 				position: center top
 				repeat: no-repeat
 
 			&:hover
 				@include filter(grayscale(0.2))
+
+			&.adjust-left
+				background-position: center top
+
+
+		#eyelight
+			background:
+				image: url('../img/eyelight.jpg')
+				size: cover
+				position: center 40%
+				repeat: no-repeat
 
 			&.adjust-left
 				background-position: center top
@@ -115,11 +116,11 @@
 			p
 				text-align: center
 				font-family: $openSans
-				margin-top: 0 
+				margin-top: 0
 
 				&.lead
 					font-family: $nexa
-					font-size: 26px	
+					font-size: 26px
 
 					span
 						display: inline-block
@@ -250,5 +251,3 @@
 			&:nth-of-type(7)
 				border-right: none
 				width: 32%
-
-
