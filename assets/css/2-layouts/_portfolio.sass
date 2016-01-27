@@ -25,6 +25,12 @@
 					@include filter(grayscale(0))
 
 
+		#blinkyapp
+			background:
+				image: url('../img/blinkyapp.jpg')
+				size: cover
+				repeat: no-repeat
+
 		#designfirstapps
 			background:
 				image: url('../img/designfirstapps.jpg')
@@ -121,12 +127,6 @@
 				&.lead
 					font-family: $nexa
 					font-size: 26px
-
-					span
-						display: inline-block
-						font-family: $openSans
-						font-size: 26px
-
 
 				&.sublead
 					font-weight: 100
@@ -232,22 +232,15 @@
 			display: inline-block
 
 			&:nth-of-type(1),
-			&:nth-of-type(3)
+			&:nth-of-type(3),
+			&:nth-of-type(5),
+			&:nth-of-type(7)
 				float: left
 				width: 49.75%
 
 			&:nth-of-type(2),
-			&:nth-of-type(4)
+			&:nth-of-type(4),
+			&:nth-of-type(6),
+			&:nth-of-type(8)
 				float: right
 				width: 50%
-
-			&:nth-of-type(5),
-			&:nth-of-type(6),
-			&:nth-of-type(7)
-				width: 33.5%
-				vertical-align: top
-				border-bottom: none
-
-			&:nth-of-type(7)
-				border-right: none
-				width: 32%

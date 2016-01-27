@@ -1443,13 +1443,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/blinky.jpg": {
+	"\/assets\/img\/blinkyapp.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 307691,
-		"inputAbbreviatedPath": "\/assets\/img\/blinky.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/blinky.jpg",
+		"initialSize": 218921,
+		"inputAbbreviatedPath": "\/assets\/img\/blinkyapp.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/blinkyapp.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
