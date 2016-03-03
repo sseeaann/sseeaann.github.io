@@ -1060,8 +1060,8 @@ body {
       #folioContent .folioWrapper .folioItem.grayscale:hover {
         -webkit-filter: grayscale(0);
         filter: grayscale(0); }
-  #folioContent .folioWrapper #blinkyapp {
-    background-image: url("../img/blinkyapp.jpg");
+  #folioContent .folioWrapper #banana {
+    background-image: url("../img/banana.jpg");
     background-size: cover;
     background-repeat: no-repeat; }
   #folioContent .folioWrapper #designfirstapps {
