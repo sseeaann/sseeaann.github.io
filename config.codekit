@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19102",
+"creatorBuild": "19115",
 "files": {
 	"\/about.html": {
 		"fileType": 8192,
@@ -1443,13 +1443,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/blinky.jpg": {
+	"\/assets\/img\/banana.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 307691,
-		"inputAbbreviatedPath": "\/assets\/img\/blinky.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/blinky.jpg",
+		"initialSize": 249257,
+		"inputAbbreviatedPath": "\/assets\/img\/banana.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/banana.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/blinkyapp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 218921,
+		"inputAbbreviatedPath": "\/assets\/img\/blinkyapp.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/blinkyapp.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1461,17 +1472,6 @@
 		"initialSize": 50586,
 		"inputAbbreviatedPath": "\/assets\/img\/cat-face.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/cat-face.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/code.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 84076,
-		"inputAbbreviatedPath": "\/assets\/img\/code.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/code.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1549,6 +1549,17 @@
 		"initialSize": 44144,
 		"inputAbbreviatedPath": "\/assets\/img\/rgb.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/rgb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/rider.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 472753,
+		"inputAbbreviatedPath": "\/assets\/img\/rider.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/rider.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1671,7 +1682,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Sean Haines",
+"lastSavedByUser": "seanhaines",
 "manualImportLinks": {
 	},
 "projectAttributes": {

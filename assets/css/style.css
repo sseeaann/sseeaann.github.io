@@ -1060,6 +1060,10 @@ body {
       #folioContent .folioWrapper .folioItem.grayscale:hover {
         -webkit-filter: grayscale(0);
         filter: grayscale(0); }
+  #folioContent .folioWrapper #banana {
+    background-image: url("../img/banana.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
   #folioContent .folioWrapper #designfirstapps {
     background-image: url("../img/designfirstapps.jpg");
     background-size: cover;
@@ -1070,22 +1074,22 @@ body {
   @media (max-width: 510px) {
     #folioContent .folioWrapper #designfirstapps {
       background-position: center -25px; } }
+  #folioContent .folioWrapper #rider {
+    background-image: url("../img/rider.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat; }
+    #folioContent .folioWrapper #rider:hover {
+      -webkit-filter: grayscale(0.2);
+      filter: grayscale(0.2); }
+    #folioContent .folioWrapper #rider.adjust-left {
+      background-position: center top; }
   #folioContent .folioWrapper #eyelight {
     background-image: url("../img/eyelight.jpg");
     background-size: cover;
     background-position: center 40%;
     background-repeat: no-repeat; }
     #folioContent .folioWrapper #eyelight.adjust-left {
-      background-position: center top; }
-  #folioContent .folioWrapper #blinky {
-    background-image: url("../img/blinky.jpg");
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat; }
-    #folioContent .folioWrapper #blinky:hover {
-      -webkit-filter: grayscale(0.2);
-      filter: grayscale(0.2); }
-    #folioContent .folioWrapper #blinky.adjust-left {
       background-position: center top; }
   #folioContent .folioWrapper #dynasport {
     background-image: url("../img/dynasport.jpg");
@@ -1137,10 +1141,6 @@ body {
       #folioContent .folioWrapper .folioInfo p.lead {
         font-family: "nexa_rust_slabblack_shadow_01", monospace;
         font-size: 26px; }
-        #folioContent .folioWrapper .folioInfo p.lead span {
-          display: inline-block;
-          font-family: "Open Sans", sans-serif;
-          font-size: 26px; }
       #folioContent .folioWrapper .folioInfo p.sublead {
         font-weight: 100;
         letter-spacing: 1px;
@@ -1222,16 +1222,9 @@ body {
 @media (min-width: 1500px) {
   #folioContent .folioWrapper {
     display: inline-block; }
-    #folioContent .folioWrapper:nth-of-type(1), #folioContent .folioWrapper:nth-of-type(3) {
+    #folioContent .folioWrapper:nth-of-type(1), #folioContent .folioWrapper:nth-of-type(3), #folioContent .folioWrapper:nth-of-type(5), #folioContent .folioWrapper:nth-of-type(7) {
       float: left;
       width: 49.75%; }
-    #folioContent .folioWrapper:nth-of-type(2), #folioContent .folioWrapper:nth-of-type(4) {
+    #folioContent .folioWrapper:nth-of-type(2), #folioContent .folioWrapper:nth-of-type(4), #folioContent .folioWrapper:nth-of-type(6), #folioContent .folioWrapper:nth-of-type(8) {
       float: right;
-      width: 50%; }
-    #folioContent .folioWrapper:nth-of-type(5), #folioContent .folioWrapper:nth-of-type(6), #folioContent .folioWrapper:nth-of-type(7) {
-      width: 33.5%;
-      vertical-align: top;
-      border-bottom: none; }
-    #folioContent .folioWrapper:nth-of-type(7) {
-      border-right: none;
-      width: 32%; } }
+      width: 50%; } }

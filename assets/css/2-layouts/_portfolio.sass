@@ -25,6 +25,12 @@
 					@include filter(grayscale(0))
 
 
+		#banana
+			background:
+				image: url('../img/banana.jpg')
+				size: cover
+				repeat: no-repeat
+
 		#designfirstapps
 			background:
 				image: url('../img/designfirstapps.jpg')
@@ -42,25 +48,26 @@
 					position: center -25px
 
 
-		#eyelight
+		#rider
 			background:
-				image: url('../img/eyelight.jpg')
-				size: cover
-				position: center 40%
-				repeat: no-repeat
-
-			&.adjust-left
-				background-position: center top
-
-		#blinky
-			background:
-				image: url('../img/blinky.jpg')
+				image: url('../img/rider.jpg')
 				size: cover
 				position: center top
 				repeat: no-repeat
 
 			&:hover
 				@include filter(grayscale(0.2))
+
+			&.adjust-left
+				background-position: center top
+
+
+		#eyelight
+			background:
+				image: url('../img/eyelight.jpg')
+				size: cover
+				position: center 40%
+				repeat: no-repeat
 
 			&.adjust-left
 				background-position: center top
@@ -115,17 +122,11 @@
 			p
 				text-align: center
 				font-family: $openSans
-				margin-top: 0 
+				margin-top: 0
 
 				&.lead
 					font-family: $nexa
-					font-size: 26px	
-
-					span
-						display: inline-block
-						font-family: $openSans
-						font-size: 26px
-
+					font-size: 26px
 
 				&.sublead
 					font-weight: 100
@@ -231,24 +232,15 @@
 			display: inline-block
 
 			&:nth-of-type(1),
-			&:nth-of-type(3)
+			&:nth-of-type(3),
+			&:nth-of-type(5),
+			&:nth-of-type(7)
 				float: left
 				width: 49.75%
 
 			&:nth-of-type(2),
-			&:nth-of-type(4)
+			&:nth-of-type(4),
+			&:nth-of-type(6),
+			&:nth-of-type(8)
 				float: right
 				width: 50%
-
-			&:nth-of-type(5),
-			&:nth-of-type(6),
-			&:nth-of-type(7)
-				width: 33.5%
-				vertical-align: top
-				border-bottom: none
-
-			&:nth-of-type(7)
-				border-right: none
-				width: 32%
-
-
