@@ -644,7 +644,7 @@ $(function(){
 		if(isMobile === false){
 			$folioItem.addClass('grayscale');
 		}
-		
+
 	}
 
 // ABOUT PAGE:
@@ -729,7 +729,7 @@ $(function(){
 			$('#typed1-alt').show();
 			emailReplace();
 		});
-		
+
 
 		$navLink.click(function(){
 			$('body').removeClass('flow');
@@ -757,7 +757,7 @@ $(function(){
 				window.location.href = '/portfolio.html';
 			}, 3500);
 		});
-		
+
 	}
 
 
@@ -798,11 +798,6 @@ $(function(){
 		});
 		$nav.removeClass('is-open');
 	});
-	
+
 
 });
-
-
-
-
-
