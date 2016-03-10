@@ -1079,18 +1079,13 @@ body {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat; }
-    #folioContent .folioWrapper #rider:hover {
-      -webkit-filter: grayscale(0.2);
-      filter: grayscale(0.2); }
     #folioContent .folioWrapper #rider.adjust-left {
       background-position: center top; }
-  #folioContent .folioWrapper #eyelight {
-    background-image: url("../img/eyelight.jpg");
+  #folioContent .folioWrapper #Appetite {
+    background-image: url("../img/iOS-Appetite.jpg");
     background-size: cover;
-    background-position: center 40%;
+    background-position: center top;
     background-repeat: no-repeat; }
-    #folioContent .folioWrapper #eyelight.adjust-left {
-      background-position: center top; }
   #folioContent .folioWrapper #dynasport {
     background-image: url("../img/dynasport.jpg");
     background-size: cover;

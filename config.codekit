@@ -1531,6 +1531,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/iOS-Appetite.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 339954,
+		"inputAbbreviatedPath": "\/assets\/img\/iOS-Appetite.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/iOS-Appetite.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/periodicTable.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
