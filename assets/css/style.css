@@ -784,6 +784,9 @@ body {
   flex-direction: column;
   -ms-flex-direction: column; }
 
+.resumeLink {
+  cursor: no-drop; }
+
 #indexBG {
   position: absolute;
   top: 0;

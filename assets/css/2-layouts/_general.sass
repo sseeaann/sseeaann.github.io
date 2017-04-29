@@ -49,7 +49,7 @@ body
 
 	nav
 		font-family: $nexa
-		padding: 10px 
+		padding: 10px
 		@include display(flex)
 		@include align-items(center)
 		@include justify-content(center)
@@ -60,7 +60,7 @@ body
 		width: 100%
 		transition: all 200ms linear
 		z-index: 10
-		
+
 		&.is-open
 			@include transform(translateY(0%))
 			box-shadow: 0 10px 2px rgba(0,0,0,0.25)
@@ -70,7 +70,7 @@ body
 				width: 70px
 				height: 70px
 				border-radius: 50%
-				background: 
+				background:
 					image: url('../img/cat-face.jpg')
 					size: cover
 				border: 3px solid $g3
@@ -78,7 +78,7 @@ body
 
 			.nav-link
 				transition: all 200ms ease-in-out
-				
+
 				&:last-child
 					margin-top: 15px
 
@@ -135,3 +135,6 @@ body
 	@include align-items(center)
 	@include justify-content(center)
 	@include flex-direction(column)
+
+.resumeLink
+	cursor: no-drop
